@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav li{ /*空格 后代选择器 可以选择儿子 孙子 重孙。。*/
+            color: royalblue;
+        }
+        .nav > li{ /*大于号 子元素选择器 只选择亲儿子*/
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+   <ul class="nav">
+       <li>一级菜单
+            <ul>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+                <li>二级菜单</li>
+            </ul>
+       </li>
+   </ul> 
+</body>
+</html>
