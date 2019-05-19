@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a[title]{ /*[] 是属性选择器*/
+            color: red;
+        }
+        input[type="text"]{
+            color: blueviolet;
+        }
+       
+        div[class^=font]{ /* ^= 表示 font开头的就行*/
+            color:royalblue;
+        }
+        div[class$=footer]{ /* class$= 表示footer结尾的就行。$= 表示结尾是*/
+            color:palevioletred;
+        }
+        div[class*=tao]{ /* class*= 表示tao在任意位置  *=表示在任意位置*/
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" title="我是一个百度">百度</a>
+    <a href="#" title="我是一个谷歌">谷歌</a>
+    <a href="#">搜狗</a>
+    <input type="text" placeholder="文本" value="webben">
+    <div class="font12">属性选择器</div>
+    <div class="font12">属性选择器</div>
+    <div class="font24">属性选择器</div>
+    <div class="font24">属性选择器</div>
+    <div class="sub-footer">属性选择器footer</div>
+    <div class="jd-footer">属性选择器footer</div>
+    <div class="news-tao-nav">属性选择器</div>
+    <div class="tao-head">属性选择器</div>
+    <div class="news-tao">属性选择器</div>
+</body>
+</html>
