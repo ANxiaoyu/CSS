@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 400px;
+        height: 500px;
+        background: hotpink url(images/liu.jpg) no-repeat;
+        /* 我们插入的图片 img 直接通过 width ,height 设置就可 */
+        /* 背景图片设置大小 background-size */
+        /* background-size: 100px; 我们尽量只改一个值，防止缩放失真扭曲 */
+        /*background-size: 50%; 把背景图片缩放为原来的一半大小*/
+
+        /* background-size: cover; */
+        /* cover 会自动调整缩放比例，保证图片始终填充满背景区域，如有溢出部分则会被隐藏
+            图片进行等比例缩放，图片一定要保证宽度和高度同时满足盒子的大小
+            势必会有部分超出去，就看不见了。这种方法常用
+        */
+
+        background-size: contain;
+        /* contain 会自动调整缩放比例，保证图片始终完整显示在背景区域。
+            图片进行等比例缩放，如果图片的 高度或者 宽度 有一个和盒子一样大了，就不在缩放。
+            这样的好处就是保证了图片的完整。不会有缺失的一部分，但是会有部分背景区域裸露
+        */
+    }
+    </style>
+</head>
+<body>
+   <div></div>
+</body>
+</html>

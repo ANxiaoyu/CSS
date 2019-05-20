@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /*  0,  0,  0,  0   特殊性公式*/
+    /* 优先级顺序：!important > 行内样式 > id选择器 > 类（伪类）选择器 > 标签选择器*/
+
+    div { /* 标签选择器 0, 0, 0,1*/
+        color: pink;
+    }
+    :first-child { /* 伪类选择器 0,0,1,0*/
+        color: green;
+    }
+    .ming { /*类选择器 0,0,1,0 */
+        color: purple;
+    }
+    #guo { /* id选择器 0,1,0,0*/
+        color: red;
+    }
+
+    /* 最大的 不是选择器 */
+    div {
+        color: orange!important; /*important 就是重要的  级别最高 一旦出现优先执行*/
+    }
+    </style>
+</head>
+<body>
+    <div class="ming" id="guo" style="color: skyblue">我儿子宋民国</div>
+</body>
+</html>
