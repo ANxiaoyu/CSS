@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul li { /* ul 0,0,0,1   li 0,0,0,1  叠加为 0,0,0,2*/
+        color: green;
+    }
+    li { /* li 0,0,0,1*/
+        color: red;
+    }
+    nav ul li { /* 叠加后为 0,0,0,3*/
+        color: blue;
+    }
+    .yiguo ul li { /* .yiguo 0,0,1,0    叠加后为 0,0,1,2*/
+        color: pink;
+    }
+    </style>
+</head>
+<body>
+    <nav class="yiguo"> 
+        <ul>
+            <li>宋大韩</li>
+            <li>宋民国</li>
+            <li>宋万岁</li>
+        </ul>
+    </nav>
+</body>
+</html>
