@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+    }
+    div:first-child { /* 结构伪类选择器  选亲兄弟*/
+        border-radius: 10px; /* 一个数值表示4个角都是相同的 10px 的弧度*/
+    }
+    div:nth-child(2) {
+        /* border-radius: 100px;  取宽度和高度的一半 则会变成一个圆形 */
+        border-radius: 50%; 
+    }
+    div:nth-child(3) {
+        border-radius: 10px 40px; /* 左上角 和 右下角 是10px    右上角 和 左下角 是40px  对角线关系*/
+    }
+    div:nth-child(4) {
+        border-radius: 10px 40px 80px; /* 左上角10px   右上角和左下角40px   右下角80px*/
+    }
+    div:nth-child(5) {
+        border-radius: 10px 40px 80px 100px; /* 左上角10px  右上角40px  右下角80px  左下角100px*/
+    }
+    div:nth-child(6) {
+        border-radius: 100px;
+        height: 100px;
+    }
+    div:nth-child(7) {
+        border-radius: 100px 0;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

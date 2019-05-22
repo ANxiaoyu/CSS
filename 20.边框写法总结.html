@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input {
+        border: 0; /* 没有边框*/
+    }
+    .user {
+        border-width: 1px;
+        border-color: palevioletred;
+        border-style: solid;
+    }
+    .nc {
+        border-top-color: purple; /*上边框*/
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-bottom-width: 1px;   /* 下边框*/
+        border-bottom-color: purple;
+        border-bottom-style: solid;
+    }
+    .password {
+        border-top: 1px green solid; /* 上边框 宽度、颜色、样式 一起写*/
+        border-bottom: 1px green solid;
+    }
+    .email {
+        border: 1px blue solid;
+    }
+    </style>
+</head>
+<body>
+    用户名：<input type="text" class="user"><br/><br/>
+    昵  称：<input type="text" class="nc"><br/><br/>
+    密  码：<input type="password" class="password"><br/><br/>
+    邮  箱：<input type="email" class="email">
+</body>
+</html>
