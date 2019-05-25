@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>通栏分布式型</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none; /* 取消列表的默认样式小点*/
+        }
+        .top {
+            height: 60px;
+            background-color: #000;
+        }
+        .banner {
+            width: 960px;
+            height: 400px;
+            background-color: skyblue;
+            margin: 20px auto;
+            border-radius: 15px;
+        }
+        .main {
+            width: 960px;
+            height: 200px;
+            margin: 10px auto;
+        }
+        .main ul li {
+            width: 240px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        .main ul li:nth-child(even) {
+            background-color: orange;
+        }
+        .footer {
+            height: 100px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="main">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

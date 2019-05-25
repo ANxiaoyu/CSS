@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>父级添加overflow方法</title>
+    <style>
+    .box1 {
+        /* height: 200px; 很多情况下，父级盒子，不方便给高度 因为考虑到孩子高度会变化 */
+        width: 600px;
+        background-color: pink;
+        overflow: hidden; /* 触发BFC BFC可以清除浮动 这是解决方案*/
+    }
+    .box2 {
+        width: 600px;
+        height: 240px;
+        background-color: purple;
+    }
+    .son1 { /* son1 和 son2 是标准流，会撑开盒子*/
+        width: 150px;
+        height: 100px;
+        background-color: skyblue;
+        float: left;
+    }
+    .son2 {
+        width: 300px;
+        height: 100px;
+        background-color: hotpink;
+        float: left;
+    }
+    /* 如果son1 和son2都浮动了，浮动元素不占位置，父亲没有高度 此时 底下盒子就会跑上来。*/
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="son1"></div>
+        <div class="son2"></div>
+    </div>
+    <div class="box2"></div>
+</body>
+</html>
