@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .father {
+        width: 800px;
+        height: 400px;
+        background-color: pink;
+        margin: 40px auto;
+        position: relative;
+    }
+    .son {
+        width: 100px;
+        height: 40px;
+        background-color: purple;
+        position: absolute;
+        /* margin: 0 auto; 加了绝对定位的盒子，margin的左右auto 就无效了 */
+
+        left: 50%; /* left 父盒子宽度的一半*/
+        margin-left: -50px; /* 左走自己宽度的一半*/
+        top: 50%;
+        margin-top: -20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

@@ -181,6 +181,30 @@
             background-color: #00a4ff;
         }
 
+        /* 精品推荐部分*/
+        .recommend {
+            height: 60px;
+            line-height: 60px;
+            background-color: #fff;
+            margin-top: 8px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        }
+        .recommend a {
+            padding: 0 30px;
+            border-right: 1px solid #ccc;
+        }
+        .recommend a:hover {
+            color: #00a4ff;
+        }
+        .recommend a:first-child {
+            color: #00a4ff;
+        }
+        .recommend a:last-child {
+            color: #00a4ff;
+            border: 0;
+            float: right;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -219,7 +243,7 @@
 
     <!--banner部分-->
     <div class="banner">
-        <dl class="banner-in container">
+        <div class="banner-in container">
 
             <!--左侧导航栏 侧边栏-->
             <div class="slidebar">
@@ -256,6 +280,18 @@
                 </dd>
             </dl>
         </div>
+    </div>
+
+    <!--精品推荐-->
+    <div class="recommend container">
+        <a href="#">精品推荐</a>
+        <a href="#">Jquery</a>
+        <a href="#">Spart</a>
+        <a href="#">MySql</a>
+        <a href="#">javaWeb</a>
+        <a href="#">MySql</a>
+        <a href="#">javaWeb</a>
+        <a href="#">修改兴趣</a>
     </div>
 </body>
 </html>
