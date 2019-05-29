@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        text-align: center;
+        line-height: 100px;
+        margin: 100px auto;
+        position: relative; /* 子绝父相*/
+    }
+    div img {
+        position: absolute;
+        left: 110px;
+        top: 0;
+        display: none;
+    }
+    div:hover img {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        扫二维码
+        <img src="images/erweima.png" alt="">
+    </div>
+</body>
+</html>

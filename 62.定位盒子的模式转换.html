@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        height: 100px;
+        background-color: pink;
+        /* float: left; 没给盒子的宽度，浮动的盒子有模式转换的情况 转化为 行内块宽度为内容的宽度 */
+        /* position: fixed; 元素添加了绝对定位和固定定位之后，元素模式也会发生转换，都转换为 行内块模式 */
+    }
+    span {
+        background-color: purple;
+        /* display: block; */
+        width: 100px;
+        height: 100px;
+        /* float: left; 如果盒子本身就需要添加浮动 或者绝对 固定定位就不需要转换了； */
+        position: absolute;
+    }
+    </style>
+</head>
+<body>
+    <div>稳住，定位不难，我们能赢</div>
+    <span>我是行内元素</span>
+</body>
+</html>
