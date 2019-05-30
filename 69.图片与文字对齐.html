@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 200px;
+        height: 100px;
+        background-color: pink;
+        margin-left: auto;
+        margin-right: auto; /* 左右自动auto 盒子可水平居中对齐*/
+        text-align: center; /* 文字水平居中*/
+        /* vertical-align: middle; 垂直居中 对块级元素无效 */
+    }
+    img { /* 行内块*/
+        /* vertical-align: baseline; 默认的基线对齐 */
+        vertical-align: middle; /* 中线对齐*/
+    }
+    textarea {
+        height: 300px;
+        width: 300px;
+        vertical-align: middle;
+    }
+    </style>
+</head>
+<body>
+    <div>文字居中</div>
+    <hr>
+    <img src="images/2.jpg" alt=""> 尴了个大尬
+    <!-- 图片和文字默认的是基线对齐，但是我们想要 中线对齐-->
+    <hr>
+    用户留言：<textarea ></textarea>
+</body>
+</html>
