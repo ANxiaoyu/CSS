@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* .one 类选择器   :hover 伪类选择器   ::after伪元素选择器 */
+    div::before {
+        content: "宋民国";
+        background-color: pink;
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: block;
+        /* 类选择器 伪类选择器 都是选取对象
+        伪元素选择器 本质上是 插入一个元素（标签 盒子） 只不过是行内元素 */
+    }
+    div::after {
+        content: "我的";
+        display: block;
+        width: 50px;
+        height: 50px;
+        border: 1px solid skyblue;
+    }
+    </style>
+</head>
+<body>
+    <div>是</div>
+    <p></p>
+</body>
+</html>
