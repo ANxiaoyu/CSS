@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        /* transform: translateX(x,y) */
+        /* 变形：移动 */
+        transition: all 0.5s; /* 过渡*/
+    }
+    div:active {
+        /* a:active 鼠标每点击没有松开鼠标的时候触发的状态 相当于点击 */
+        /* transform: translate(50px,50px); 当我们点击之后再移动位置 */
+        /* transform: translate(50px); 当我们点击之后再移动位置 x轴 */
+        /* transform: translate(0,50px); 当我们点击之后再移动位置 y轴 */
+        transform: translateX(100px); 
+        /* transform: translateY(100px); y轴 */
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
