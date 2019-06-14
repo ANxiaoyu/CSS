@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    section {
+        width: 1000px;
+        height: 600px;
+        border: 2px solid pink;
+        margin: 100px auto;
+        display: flex;
+        justify-content: space-around; /*  相当于给每个盒子添加了左右margin外边距 */ 
+        /* 垂直对齐*/
+        /* align-items: flex-start; 上对齐 */
+        /* align-items: flex-end; 底对齐 */
+        /* align-items: center; 垂直居中 */
+        align-items: stretch; /* 相当于 height:100%; 让子元素的高度拉伸适合父容器（子元素不给高度的前提下）*/
+    }
+    div {
+        width: 250px;
+        /* height: 200px; */
+    }
+    div:first-child {
+        background-color: pink;
+    }
+    div:nth-child(2) {
+        background-color: purple;
+    }
+    div:nth-child(3) {
+        background-color: skyblue;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+</html>
